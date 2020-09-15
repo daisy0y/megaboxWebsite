@@ -6,6 +6,8 @@
     <title>MEGA BOX</title>
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/swiper.css">
+    
      <!-- 파비콘 -->
      <link rel="shortcut icon" href="/assets/icons/favicon.ico">
      <link rel="apple-touch-icon-precomposed" href="assets/icons/favicon_72.png" />
@@ -44,6 +46,10 @@
                             <strong><img src="/assets/img/logo-sub.png" alt="LIFE THEATER"></strong>
                         </a>
                     </h1>
+                    <nav id="mNav">
+                        <h2 class="ir_so">메가박스 전체메뉴</h2>
+                        <a href="#" class="ham"><span></span></a>
+                    </nav>
                     <nav class="nav">
                         <ul class="clearfix">
                             <li><a href="#">영화</a></li>
@@ -67,7 +73,7 @@
                 <div class="row">
                     <div class="bm_left">
                         <ul>
-                            <li class="total"><a href="#">전체메뉴</a></li>
+                            <li class="total"><a href="#"><i class="fas fa-bars"></i> 전체메뉴</a></li>
                             <li class="line"><a href="#">필름 소사이어티</a></li>
                             <li><a href="#">클래식 소사이어티</a></li>
                         </ul>
@@ -87,13 +93,173 @@
             </div>
         </article>
         <article class="slider">
-                <img src="/assets/img/main_slider01.jpg" alt="베스와 세라">
+            <div class="swiper-container">
+
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide ss1">
+                    <div class="container">
+                        <div class="row">
+                            <h2>캡틴 마블 <em>Captain Marvel</em></h2>
+                            <p>새로운 히어로, 어벤져스의 희망</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide ss2">
+                    <div class="container">
+                        <div class="row">
+                            <h2>캡틴 마블 <em>Captain Marvel</em></h2>
+                            <p>새로운 히어로, 어벤져스의 희망</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide ss3">
+                    <div class="container">
+                        <div class="row">
+                            <h2>캡틴 마블 <em>Captain Marvel</em></h2>
+                            <p>새로운 히어로, 어벤져스의 희망</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-slide" data-swiper-autoplay="2000">
+        </div>
+    
         </article>
     </section>
 
+    <!-- movie -->
+   <section id="movie">
+       <div class="container">
+           <div class="row">
+               <div class="movie">
+                   <h2 class="ir_so">최신 영화 정보</h2>
+                   <div class="movie_title">
+                       <ul>
+                           <li class="active"><a href="#">박스오피스</a></li>
+                           <li><a href="#">최신개봉작</a></li>
+                           <li><a href="#">상영예정작</a></li>
+                           <li><a href="#">큐레이션</a></li>
+                       </ul>
+                   </div>
+                   <div class="movie_chart">
+                        <div class="chart_cont1">
+                            <div>
+                                <div class="poster">
+                                    <figure>
+                                    <img src="/assets/img/poster01.jpg" srcset="/assets/img/poster01@2.jpg 2x"  alt="침묵">
+                                    </figure>
+                                    <div class="rank"><strong>1</strong></div>
+                                    <div class="mx">
+                                        <span class="icon m ir_pm">MX</span>
+                                        <span class="icon b ir_pm">Boutique</span>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <h3><span class="icon all ir_pm">전체관람가</span><strong>침묵</strong></h3>
+                                    <div class="infor_btn">
+                                        <a href="#">상세보기</a>
+                                        <a href="#">예매하기</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <!--chart_cont1-->
+                        <div class="chart_cont2">
+                            <div>
+                                <div class="poster">
+                                    <figure>
+                                    <img src="/assets/img/poster02.jpg" srcset="/assets/img/poster02@2.jpg 2x"  alt="신세계">
+                                    </figure>
+                                    <div class="rank"><strong>2</strong></div>
+                                    <div class="mx">
+                                        <span class="icon m ir_pm">MX</span>
+                                        <span class="icon b ir_pm">Boutique</span>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <h3><span class="icon a19 ir_pm">19세관람가</span><strong>신세계</strong></h3>
+                                    <div class="infor_btn">
+                                        <a href="#">상세보기</a>
+                                        <a href="#">예매하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--chart_cont2-->
+                        <div class="chart_cont3">
+                            <div>
+                                <div class="poster">
+                                    <figure>
+                                    <img src="/assets/img/poster03.jpg" srcset="/assets/img/poster03@2.jpg 2x"  alt="마스터">
+                                    </figure>
+                                    <div class="rank"><strong>3</strong></div>
+                                    <div class="mx">
+                                        <span class="icon m ir_pm">MX</span>
+                                        <span class="icon b ir_pm">Boutique</span>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <h3><span class="icon a15 ir_pm">15세관람가</span><strong>마스터</strong></h3>
+                                    <div class="infor_btn">
+                                        <a href="#">상세보기</a>
+                                        <a href="#">예매하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <!--chart_cont3--> 
+                        <div class="chart_cont4">
+                            <div>
+                                <div class="poster">
+                                    <figure>
+                                    <img src="/assets/img/poster04.jpg" srcset="/assets/img/poster04@2.jpg 2x"  alt="마약왕">
+                                    </figure>
+                                    <div class="rank"><strong>4</strong></div>
+                                    <div class="mx">
+                                        <span class="icon m ir_pm">MX</span>
+                                        <span class="icon b ir_pm">Boutique</span>
+                                    </div>
+                                </div>
+                                <div class="infor">
+                                    <h3><span class="icon a19 ir_pm">19세관람가</span><strong>마약왕</strong></h3>
+                                    <div class="infor_btn">
+                                        <a href="#">상세보기</a>
+                                        <a href="#">예매하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <!--chart_cont4-->
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
 
     <script src="assets/js/jquery.min_1.12.4.js"></script>
     <script src="assets/js/modernizr-custom.js"></script>
     <script src="assets/js/ie-checker.js"></script>
+    <script src="/assets/js/swiper.min.js"></script>
+    <script>
+
+        var mySwiper = new Swiper('.swiper-container', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets'},
+    autoplay: {
+    delay: 5000,
+  }
+  
+});
+    </script>
+    <script src="https://kit.fontawesome.com/18b782cf96.js" crossorigin="anonymous"></script>
 </body>
 </html>
